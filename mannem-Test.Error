@@ -1,0 +1,5 @@
+T008	Verify that the program is not working with incorrect filename. (file  not present)
+./spell: filename_notPresent: stat error: No such file or directory
+T017	Verify working of Spell program on inputs conaining words other than ASCII codeset ( Like Unicode)
+conaining
+conaining

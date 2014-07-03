@@ -1,0 +1,275 @@
+T001	 Verify whether spell check info is displayed with Help command
+This is GNU Spell, a Unix spell emulator.
+
+  -I, --ispell-version		Print Ispell's version.
+  -V, --version			Print the version number.
+  -b, --british			Use the British dictionary.
+  -d, --dictionary=FILE		Use FILE to look up words.
+  -h, --help			Print a summary of the options.
+  -i, --ispell=PROGRAM		Calls PROGRAM as Ispell.
+  -l, --all-chains		Ignored; for compatibility.
+  -n, --number			Print line numbers before lines.
+  -o, --print-file-name		Print file names before lines.
+  -s, --stop-list=FILE		Ignored; for compatibility.
+  -v, --verbose			Print words not literally found.
+  -x, --print-stems		Ignored; for compatibility.
+
+Please use Info to read more (type `info spell').
+Usage: ./spell [OPTION]... [FILE]...
+T002	Verify that the Line numbers and file names are displayed in the output
+sample:1: Tihs
+sample:1: si
+sample:1: fo
+sample:1: Splel
+sample:1: worsd
+sample:1: spellledworng
+sample:2: fi
+sample:2: cna
+sample:2: dael
+sample:2: fiel
+sample:2: Foo
+sample:2: bza
+sample:2: baz
+sample:3: raja
+sample:3: jaya
+sample:3: chandra
+sample:3: mannem
+sample:3: thes
+sample:3: ar
+sample:3: wods
+T003 Verify the presence of Master Dictionary against which spell check is done.
+T003:PASS Master dictionary present
+T004	Verify the presence of History file in Which Misspelt words are Written
+T004:PASS Spell hist file  present
+T005	Verify spell check from the words collected  at standard input
+T006	Verify that the LocalFile contents are excluded from misspelt words
+T007	Verify the existance of subroutines hashmake , Spellin , hashckeck .
+T007:PASS : subroutines hashmake , Spellin , hashckeck are Indeed present 
+T008	Verify that the program is not working with incorrect filename. (file  not present)
+T010	Verify  the functionality of spell check against multiple Large files
+Infochimps
+ing
+ly
+doozies
+OSPD
+Moby
+aaPG
+Readme
+txt
+eTexts
+etext
+etext
+Etext
+etext
+TM
+etext
+etext
+ETEXT
+ETEXT
+etext
+etext
+TM
+etext
+etext
+etext
+cessing
+etexts
+ver
+TM
+etext
+etext
+etext
+TM
+Etexts
+TM
+etext
+TM
+etexts
+etext
+etexts
+etexts
+etext
+etext
+etext
+etext
+etext
+etext
+etexts
+T011	Verify  the functionality of spell check against multiple small files
+smll
+wiut
+errrors
+inluuded
+anothher
+smalll
+fillle
+withh
+erors
+includdd
+yett
+fil
+T012	Verify  the functionality of spell check against a single Huge file 
+Infochimps
+ing
+ly
+doozies
+OSPD
+Moby
+aaPG
+Readme
+txt
+eTexts
+etext
+etext
+Etext
+etext
+TM
+etext
+etext
+ETEXT
+ETEXT
+etext
+etext
+TM
+etext
+etext
+etext
+cessing
+T013	Verify the functionality of spell check against an empty file 
+T014	verify spell check with mix of (American and British words)
+Tihs
+si
+fo
+Splel
+worsd
+spellledworng
+fi
+cna
+dael
+fiel
+Foo
+bza
+baz
+raja
+jaya
+chandra
+mannem
+thes
+ar
+wods
+T015	Verify spell check with only British words . ( non-brit American words should be output as misspelt )
+abseil
+bodge
+candidature
+T016	Verify spell check with only American words. (non-American Brit words should be output as misspelt)
+backhoe
+discombobulated
+dishrag
+T018	Verify working of Spell program on inputs conaining  ASCII -  symbols and other Special characters
+T019	Verify the working of program with a mix of  good files & Corrupt files
+Tihs
+si
+fo
+Splel
+worsd
+spellledworng
+fi
+cna
+dael
+fiel
+Foo
+bza
+baz
+raja
+jaya
+chandra
+mannem
+thes
+ar
+wods
+T020	Verify the working of program with only multiple corrupted files 
+T021	Verify the working of program with all good files.
+Tihs
+si
+fo
+Splel
+worsd
+spellledworng
+fi
+cna
+dael
+fiel
+Foo
+bza
+baz
+raja
+jaya
+chandra
+mannem
+thes
+ar
+wods
+Infochimps
+ing
+ly
+doozies
+OSPD
+Moby
+aaPG
+Readme
+txt
+eTexts
+etext
+etext
+Etext
+etext
+TM
+etext
+etext
+ETEXT
+ETEXT
+etext
+etext
+TM
+etext
+etext
+etext
+cessing
+etexts
+ver
+TM
+etext
+etext
+etext
+TM
+Etexts
+TM
+etext
+TM
+etexts
+etext
+etexts
+etexts
+etext
+T022	Verify the working of program with single good file.
+Tihs
+si
+fo
+Splel
+worsd
+spellledworng
+fi
+cna
+dael
+fiel
+Foo
+bza
+baz
+raja
+jaya
+chandra
+mannem
+thes
+ar
+wods
+T023	Verify that the spell check dosent work with ( incorrect file name & a Corrupt file)
